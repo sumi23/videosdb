@@ -1,6 +1,7 @@
-create table sample_program(
+create table sample_programs(
 id int primary key,
 name varchar(20) not null,
+constraint unique_name unique(name),
 file longblob not null,
 description text,
 created_by varchar(20) not null,
