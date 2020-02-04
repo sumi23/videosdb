@@ -1,7 +1,7 @@
 create table videos(
 id int primary key,
 name varchar(50) not null,
-constraint unique_videos_name unique(name),
+constraint unique_video_name unique(name),
 display_name varchar(50) not null,
 url varchar(50) not null,
 constraint unique_url unique(url),
