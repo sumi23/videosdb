@@ -1,7 +1,7 @@
 create table reference_artifacts(
 id int primary key,
 name varchar(30) not null,
-constraint unique_reference_artifacts_name unique(name),
+constraint unique_reference_artifact_name unique(name),
 file longblob not null,
 description text,
 video_id int not null,
