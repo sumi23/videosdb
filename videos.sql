@@ -1,5 +1,5 @@
 create table videos(
-id int primary key,
+id int primary key auto_increment,
 name varchar(50) not null,
 constraint unique_video_name unique(name),
 display_name varchar(50) not null,
