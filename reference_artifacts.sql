@@ -1,5 +1,5 @@
 create table reference_artifacts(
-id int primary key,
+id int primary key auto_increment,
 name varchar(30) not null,
 constraint unique_reference_artifact_name unique(name),
 file longblob not null,
