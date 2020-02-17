@@ -1,5 +1,5 @@
 create table reference_urls(
-id int primary key,
+id int primary key auto_increment,
 name varchar(30) not null,
 constraint unique_reference_url_name unique(name),
 url varchar(50) not null,
