@@ -1,5 +1,5 @@
 create table sample_programs(
-id int primary key,
+id int primary key auto_increment,
 name varchar(30) not null,
 constraint unique_sample_program_name unique(name),
 file longblob not null,
