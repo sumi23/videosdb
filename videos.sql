@@ -9,13 +9,13 @@ duration time,
 tags varchar(100) not null,
 status boolean,
 description text,
-transcript longblob,
+transcript varchar(50),
 created_by varchar(30) not null,
 created_on timestamp not null default current_timestamp,
 modified_by varchar(30),
 modified_on default null on update current_timestamp,
 category_id int not null,
 level_id int not null,
-constraint fk_categories_id foreign key(category_id) references categories(id),
-constraint fk_levels_id foreign key(level_id) references levels(id)
+constraint fk_videos_category_id foreign key(category_id) references categories(id),
+constraint fk_videos_level_id foreign key(level_id) references levels(id)
 );
